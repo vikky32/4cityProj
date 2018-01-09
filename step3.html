@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Шаг 3</title>
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="fonts.css">
+		<link rel="stylesheet" type="text/css" href="step3.css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<script type="text/javascript" src="library/jquery-3.2.1.min.js" ></script>
+	</head> 
+	<body>
+		<div class="main">
+			<div class="container">
+				<div class=" header">
+					<div class="header-item logo">
+					 <a href="" class="logo-img"><img src="images/logo.svg"><span>мозг</span></a>
+					</div>
+					<div class="header-item header-links">
+						<a href="catalogue.html"><div class="idea-link see-idea">
+							Посмотреть все идеи
+						</div></a>
+						<a href="step1.html"><div class="idea-link submit-idea">
+							Подать идею
+						</div></a>
+					</div>	
+				</div>
+				<div class="bubble-container">
+					<div class="main-info">
+						<div class="info-head">
+							<div class="head-item container-name">
+								<div class="head-link-container"><a href="step2.html"><img src="images/path2.svg"></a></div>
+							    <div><p>Информация о заявителе</p></div>
+						    </div>  
+							<div class="head-item step">Шаг 3 из 3</div>
+						</div>
+						<div class="form-container">
+							<form class="step-form" action="/action_page.php"  enctype="multipart/form-data" method="post">
+								<div class="input-container">
+									<label for="name-surname" class="label-item name-label name-surname-input" onclick="">Имя и фамилия</label>
+									<input type="text" id="name-surname" class="input-field input-item input-full-width same-height name-surname-input name-input"  name="name-surname" required>
+								</div>
+								<div class="input-container">
+									<label for="phone-number" class="label-item" onclick="">Телефон</label>
+									<input type="text" id="phone-number" class="input-item same-height phone-number "  name="phone-number"  value="+38" pattern="((\+|00)?[1-9]{2}|0)[1-9]( ?[0-9]){8}((\+|00)?[1-9]{2}|0)[1-9]([0-9]){8}" oninput="return testSymb(this);" onchange="return testSymb(this)" required>
+								</div>
+
+								<div class="input-container">
+								<label for="email" class="label-item input-label" onclick="">E-mail</label>
+									<input type="email" id="email" class="input-field input-item same-height half-width input-label"  name="email"
+										   pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}" required>
+								</div>
+								<div class="input-container">
+									<label for="facebook-profile" class="label-item input-label" onclick="">Профиль Facebook</label>
+									<input type="text" id="facebook-profile" class="input-field input-item same-height half-width input-label"  name="facebook-profile" required>
+								</div>
+
+								</form>
+								
+					    </div>
+					</div>
+					<div class="footer">
+							<div class="footer-btns">
+								<div class="footer-item"><a href="catalogue.html"><button class="next-step">Подать идею</button></a></div>
+
+								<div class=" footer-item reset-btn">
+									<span>или</span>
+									<input class="clear-all" id = "input-reset" type="reset" name="clear-all" value="очистить всё">
+								</div>
+							</div>
+
+					</div>
+				</div>
+				<div class="bottom-footer">
+					<p class="footer-text">© 2016-2017 – Ресторан 4city.
+					</p>
+				</div>
+			</div>
+		</div>
+	<script src="main.js"></script>
+	</body>  
+</html>

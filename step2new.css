@@ -1,0 +1,27 @@
+.container{
+    width: 340px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 150px;
+    border: 1px solid black;
+}
+.step-name{
+    float: left;
+}
+.right-side{
+    float: right;
+}
+#addDynamicExtraFieldButton{
+    border: none;
+    text-align: left;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    color: #498FE1;
+    border-bottom:1px dashed #498FE1;
+    margin-left: 10px;
+    padding: 0;
+    position: absolute;
+    margin-top: 30px;
+
+}

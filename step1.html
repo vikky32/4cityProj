@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="fonts.css">
+        <link rel="stylesheet" type="text/css" href="step1.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <script type="text/javascript" src="library/jquery-3.2.1.min.js" ></script>
+        <title>Шаг 1</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class=" header">
+                <div class="header-item logo">
+                    <a href="" class="logo-img"><img src="images/logo.svg"><span>мозг</span></a>
+                </div>
+                <div class="header-item header-links">
+                    <a href="catalogue.html"><div class="idea-link see-idea">
+                        Посмотреть все идеи
+                    </div></a>
+                    <a href="step1.html"><div class="idea-link submit-idea">
+                        Подать идею
+                    </div></a>
+                </div>
+            </div>
+            <div class="bubble-container">
+                <div class="main-info">
+                    <div class="info-head">
+                        <div class="head-item container-name">
+                            <div class="head-link-container"><a href="#"><img src="images/path3.svg"></a></div>
+                            <div><p>Расскажите о вашей</p></div>
+                        </div>
+                        <div class="head-item step">Шаг 1 из 3</div>
+                    </div>
+                    <div class="form-container">
+                        <form class="step-form" id="form-item" action="/action_page.php"  enctype="multipart/form-data" method="post">
+                            <div class="input-label-container name-container">
+                                <label for="name-input" class="label-item input-label name-label"><span>Название</span></label>
+                                <div class="input-container input-label">
+                                    <input class="input-field input-item input-full-width input-name" id="name-input" type="text" name="name" required>
+                                    <p class="input-addition">Название должно быь лаконичным, но расскрывать суть идеи.</p>
+                                </div>
+                            </div>
+                            <div class="input-label-container radio-container">
+                                <div class="label-item input-label radio-label"><span>Где будет реализовано?</span></div>
+                                <div class="input-container input-label radio-input">
+                                    <label class="radio-label" onclick=""><input type="radio" class="radio-btn" name="radio"><span>в ресторане</span></label>
+                                    <label class="radio-label" onclick=""><input type="radio" class="radio-btn" name="radio"><span> лектории</span></label>
+                                    <label class="radio-label" onclick=""><input type="radio" class="radio-btn" name="radio"><span>в проектах для платформы 4city</span></label>
+                                </div>
+                            </div>
+                            <div class="input-label-container about-idea-container">
+                                <label for="area-input" class="label-item input-label about-idea-label"><span>Опишите вашу идею</span></label>
+                                <div class="input-container input-label">
+                                    <textarea  class="input-field input-full-width idea-area-input input-item" id="area-input"></textarea>
+                                    <div class="upload-files">
+                                        <label id="s-f" class="fl-upd" onclick="" >
+                                            <input type="file" id="file" name="file" onchange="showFile()" >
+                                            <img src="images/files.svg"><span>Прикрепить презентацию или файл</span>
+                                            <span id="show-file" ></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-label-container auditory-container">
+                                <label for="aud-input" class="label-item input-label  aud-label"><span>Целевая аудитория</span></label>
+                                <div class="input-container input-label">
+                                        <input class="input-field input-full-width input-auditory input-border" id="aud-input" type="text" name="target-audience">
+                                        <p class="input-addition">Перечислите через запятую</p>
+                                </div>
+                            </div>
+                            <div class="input-label-container self-rate-container">
+                                <label for="first-area" class="label-item input-label self-rate-label"><span>Самооценка идеи</span></label>
+                                <div class="input-container input-label">
+                                    <div class="self-rating">
+                                        <div class="weakness-strength">
+                                            <p>Риски и слабые стороны</p>
+                                            <textarea class="input-field self-rate-area f-area input-border" id="first-area" ></textarea>
+                                        </div>
+                                        <div class="weakness-strength strength">
+                                            <p>Сильные стороны, какую проблему решает?</p>
+                                            <textarea class="input-field self-rate-area input-border" ></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="footer">
+                    <div class="footer-btns">
+                        <div class="footer-item"><a href="step2.html"><button class="next-step">Следующий шаг</button></a></div>
+
+                        <div class=" footer-item reset-btn">
+                            <span>или</span>
+                            <input class="clear-all" id = "input-reset" type="reset" name="clear-all" value="очистить всё">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p class="footer-text">© 2016-2017 – Ресторан 4city.
+                </p>
+            </div>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>

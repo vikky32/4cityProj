@@ -1,0 +1,318 @@
+@import "step2.css";
+@import "fonts.css";
+
+%header-button{
+        padding: 9px 18px 9px 19px;
+        border-radius: 2px;
+        border: none;
+        background: transparent;
+        color: #4A494A;
+        font-size: 1.125em;
+        font-family: ProximaNova-Regular;
+        cursor: pointer;
+}
+%header-button:hover{
+        padding: 9px 18px 9px 19px;
+        border-radius: 5px;
+        border: none;
+        background-color: #D8DADD;
+        color: #FAFAFA;
+        font-size: 1.125em;
+}
+%d-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
+%form-input{
+        height: 38px;
+        padding: 0;
+        grid-column: 2;
+        border: 1px solid #d8dadd;
+        border-radius: 0;
+        //font-family: ProximaNova-Regular;
+}
+%form-label{
+        color: #4A494A;
+        font-size: 1em;
+        grid-column: 1;
+        line-height: 40px;
+        width: max-content;
+        //font-family: ProximaNova-Regular;
+}
+
+body{
+    /*width: 1462px;*/
+        margin: 0 auto;
+        height: 1000px;
+        min-height: 100%;
+        background: url("images/rectangle-5.png") #d7d7d7;
+        font-size: 16px;
+        font-family: ProximaNova-Regular;
+        font-style: normal;
+        font-stretch: normal;
+        font-weight: 400;
+        
+        main{
+                width: min-content;
+                height: auto;
+                margin: 0 auto;
+        
+                header{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 100%;
+                        padding: 25px 0 24px 0;
+                        .header-logo{
+                                width: auto;
+                                display: flex;
+                                justify-content: flex-start;
+                                a{
+                                        display: block;
+                                        height: 100%;
+                                        text-decoration: none;
+                                }
+                                span{
+                                        vertical-align: super;
+                                        color: #393939;
+                                        font-size: 2.125em;
+                                        padding-left: 2px;
+                                        font-family: CoreSansA35Light;
+                                }
+                        }
+                        .header-links{
+                                width: auto;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-end;
+                                height: 38.4px;
+                                 a{
+                                          text-decoration: none;
+                                          color: darkslategrey;
+                                         button{
+                                                @extend %header-button;
+                
+                                          }
+                                 }
+                                button:focus{
+                                        outline: none;
+                                }
+                                button:hover{
+                                        @extend %header-button:hover;
+                                        a{
+                                                text-decoration: none;
+                                                color: white;
+                                        }
+                                }
+                        }
+                }
+                
+                        section.container{
+                                width: 960px;
+                                margin: 0 auto;
+                                        section.container-info{
+                                                padding: 46px 60px 111px 69px;
+                                                background-color: white;
+                                                        section.container-info-header{
+                                                                @extend %d-flex;
+                                                                        div{
+                                                                                @extend %d-flex;
+                                                                                p{
+                                                                                        color: #4a494a;
+                                                                                        padding-left: 10px;
+                                                                                        margin: 0;
+                                                                                        width: 274px;
+                                                                                        text-align: left;
+                                                                                        font-size: 1.5em;
+                                                                                }
+                                                                        }
+                                                                        p{
+                                                                                margin: 0;
+                                                                                color: #D8DADD;
+                                                                                font-size: 1.25em;
+                                                                        }
+                                                        }
+                                                        
+                                                                form.container-info-form{
+
+                                                                        margin-top: 73px;
+
+                                                                                label{
+                                                                                        @extend %form-label;
+                                                                                }
+                                                                                input{
+                                                                                        @extend %form-input;
+                                                                                }
+                                                                                input:focus{
+                                                                                        color: #4A494A;
+                                                                                }
+                                                                        
+                                                                                section.section_input-myfunction{
+                                                                                        input{
+                                                                                                width: 600px;
+                                                                                        }
+                                                                                }
+                                                                                section.section_input-realisationsteps{
+                                                                                        width: 600px;
+                                                                                        display: flex;
+                                                                                        flex-direction: column;
+                                                                                        justify-content: space-between;
+                                                                                                div:nth-child(1){
+                                                                                                        width: 625px;
+                                                                                                }
+                                                                                                input{
+                                                                                                        width: 600px;
+                                                                                                        color: #B6B9BD;
+                                                                                                        font-size: 0.875em;
+                                                                                                  }
+                                                                                        input:focus{
+                                                                                                color: #4A494A;
+                                                                                        }
+                                                                                                #garbage{
+                                                                                                        width: 15.15px;
+                                                                                                        height:  20px;
+                                                                                                        margin-left: 5px;
+                                                                                                }
+                                                                                                div:nth-child(odd){
+                                                                                                        a{
+                                                                                                                text-decoration: none;
+                                                                                                                color: #498FE1;
+                                                                                                                font-size: 1em;
+                                                                                                                        span{
+                                                                                                                                vertical-align: super;
+                                                                                                                                margin-left: 5px;
+                                                                                                                        }
+                                                                                                        }
+                                                                                                }
+                                                                                                
+                                                                                }
+                                                                                 section.section_input-finance{
+                                                                                                        input{
+                                                                                                                width: 84px;
+                                                                                                                font-size: 0.875em;
+                                                                                                        }
+                                                                                                        p{
+                                                                                                                margin: 0;
+                                                                                                                font-size: 0.875em;
+                                                                                                                color: #D8DADD;
+                                                                                                                margin-top: 4px;
+                                                                                                        }
+                                                                                                        span{
+                                                                                                               color: #4A494A;
+                                                                                                                font-size: 1em;
+                                                                                                                margin-left: 5px;
+                                                                                                        }
+                                                                                 }
+                                                                                section.section_input-helpers{
+                                                                                        display: grid;
+                                                                                        grid-template-columns: 1fr 1fr;
+                                                                                                #input-helpers-company{
+                                                                                                        width: 290px;
+                                                                                                        grid-column: 1;
+                                                                                                }
+                                                                                                #input-helpers-profile{
+                                                                                                        width: 290px;
+                                                                                                        grid-column: 2;
+                                                                                                }
+                                                                                                #span-comp{
+                                                                                                        grid-column: 1;
+                                                                                                        font-size: 0.875em;
+                                                                                                        color: #4A494A;
+                                                                                                }
+                                                                                                #span-fb{
+                                                                                                        grid-column: 2;
+                                                                                                        font-size: 0.875em;
+                                                                                                        color: #4A494A;
+                                                                                                }
+                                                                                                div{
+                                                                                                        text-decoration: none;
+                                                                                                        font-size: 1em;
+                                                                                                        color: #D8DADD;
+                                                                                                        grid-column: 1;
+                                                                                                                a{
+                                                                                                                color: #D8DADD;
+                                                                                                                text-decoration: none;
+                                                                                                                        span{
+                                                                                                                                vertical-align: super;
+                                                                                                                                margin-left: 5px;
+                                                                                                                        }
+                                                                                                        }
+                                                                                                }
+                                                                                        
+                                                                                }
+                                                                                 section.section_input-days{
+                                                                                        input{
+                                                                                                width: 84px;
+                                                                                        }
+                                                                                         span{
+                                                                                                 margin-left: 5px;
+                                                                                                 color: #4A494A;
+                                                                                                 font-size: 1em;
+                                                                                         }
+                                                                                 }
+                                                                }
+                                                        
+                                                        }
+                                        section.container-footer{
+                                                grid-row: 2 / 2;
+                                                width: 100%;
+                                                background-color: #F4C231;
+                                                div.container-footer-buttons{
+                                                        padding: 13px 0 14px 0;
+                                                        width: fit-content;
+                                                        margin-left: 300px;
+                                                        button{
+                                                                border-radius: 5px;
+                                                                width: 250px;
+                                                                height: 50px;
+                                                                background: #ffffff;
+                                                                box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+                                                                border: none;
+                                                                padding: 0;
+                                                                cursor: pointer;
+                                                                font-size: 1.3125em;
+                                                                a{
+                                                                        text-decoration: none;
+                                                                        font-size: 1.3125em;
+                                                                        color: #4A494A;
+                                                                }
+                                                        }
+                                                        button:focus{
+                                                                outline: none;
+                                                        }
+                                                        input{
+                                                                background-color: transparent;
+                                                                border: none;
+                                                                width: max-content;
+                                                                height: 25px;
+                                                                cursor: pointer;
+                                                                color: #ffffff;
+                                                                font-size: 1.3125em;
+                                                                padding: 0;
+                                                        }
+                                                        input:focus{
+                                                                outline: none;
+                                                        }
+                                
+                                                }
+                                        }
+                        }
+                        footer{
+                                width: 960px;
+                                margin: 0 auto;
+                                margin-top: 75px;
+                                div.footer-contacts{
+                                        p{
+                                                margin: 0;
+                                                font-size: 0.875em;
+                                                color: #b9b9b9;
+                                        }
+                                        span{
+                                                font-size: 0.875em;
+                                                color: #b9b9b9;
+                                        }
+                                }
+                        }
+        }
+}

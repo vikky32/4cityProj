@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Шаг 2</title>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "fonts.css">
+    <link rel = "stylesheet" type = "text/css" href = "step2new.css">
+    <link rel = "stylesheet" type = "text/css" href = "normalize.css">
+    <script type="text/javascript" src="library/jquery-3.2.1.min.js" ></script>
+</head>
+<body>
+    <div class="container">
+
+        <form action="" method="post" name="Form">
+            <div id="DynamicExtraFieldsContainer">
+
+                <div class="step-name"><label for="firstStep">Этапы реализации</label></div>
+                <div class="right-side DynamicExtraField">
+                    <input type="text" class="realisation-steps" id="firstStep" name="DynamicExtraField[]" value="">
+                </div>
+
+            </div>
+            <div  class="right-side " id="addDynamicField">
+                <input type="button" id="addDynamicExtraFieldButton" value="Добавить ещё шаг">
+            </div>
+        </form>
+    </div>
+<script src="new2.js"></script>
+</body>
+</html>

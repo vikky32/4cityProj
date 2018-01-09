@@ -1,0 +1,300 @@
+body{
+    font-size: 16px;
+    background: url("images/rectangle-5.png") #d7d7d7;
+}
+p{
+    margin: 0;
+}
+textarea{
+    resize: none;
+}
+
+/* header*/
+
+.header{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.header-item{
+    display: inline-block;
+}
+.logo{
+    height: 45px;
+}
+.logo a{
+    text-decoration: none;
+}
+
+.logo span{
+    height: 42px;
+    padding-left: 2px;
+    color: #393939;
+    font-family: CoreSansA35Light;
+    font-size: 2.125em;
+    vertical-align: super;
+}
+.header-links{
+    float: right;
+}
+.header-links a{
+    text-decoration: none;
+    font-family: ProximaNova-Regular;
+    color: #4A494A;
+    font-size: 1.125em;
+}
+.idea-link{
+    display: inline-block;
+    padding: 9px 18px 9px 19px;
+    border-radius: 2px;
+}
+.idea-link:hover{
+    background-color: #D8DADD;
+    color: #FAFAFA;
+}
+
+/*main container*/
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+.container-name div{
+    display: inline-block;
+}
+.head-item{
+    display: inline-block;
+}
+
+.container-name p{
+    margin-left: 5px;
+    font-size: 1.5em;
+}
+.step{
+    float: right;
+    color: #d8dadd;
+    font-family: ProximaNova-Regular;
+    font-size: 1.25em;
+}
+.bubble-container{
+    width: 100%;
+    background-color: white;
+}
+.main-info{
+    padding: 46px 60px 111px 69px;
+    color: #4a494a;
+    font-family: ProximaNova-Regular;
+    font-size: 1em;
+    text-align: left;
+}
+
+/* form */
+
+.step-form{
+    margin-top: 73px;
+}
+.label-item {
+    width: 179px;
+    margin-right: 50px;
+}
+.label-item span{
+    padding-top: 10px;
+}
+.input-container{
+
+}
+
+.input-item{
+    border-radius: 2px;
+    border: 1px solid  #B6B9BD;
+}
+.input-full-width{
+    width: 598px;
+}
+
+
+/*name-input*/
+.input-name{
+    height: 36px;
+}
+.name-container label{
+}
+.input-addition{
+    font-size: 0.9em;
+    color: #B6B9BD;
+    margin-top: 0;
+}
+
+
+/* radio-inputs*/
+
+.radio-container{
+    margin-top: 15px;
+}
+.radio-label span{
+    padding-top: 0;
+}
+.radio-input input[type="radio"]{
+    display: none;
+}
+.radio-input span{
+    color: #498FE1;
+    font-size: 1em;
+    border-bottom: 0.5px dashed #498FE1;
+}
+.radio-input .radio-label{
+    cursor: pointer;
+    height: 15px;
+    margin-right: 32px;
+}
+.radio-input input[type="radio"]:checked+span{
+    outline: 1px solid #498FE1;
+    border-bottom: none;
+
+}
+/*about idea*/
+.about-idea-container{
+    margin-top: 30px;
+}
+.about-idea-label{
+
+}
+.about-idea-label p{
+
+}
+.idea-area-input{
+    height: 90px;
+    width: 594px;
+}
+.upload-files{
+    height: 20px;
+    font-family: ProximaNova-Regular;
+    color:#498FE1;
+    font-size: 1em;
+    text-align: left;
+    width: fit-content;
+    margin-top: 3px;
+}
+.upload-files input[type="file"]{
+    display: none;
+}
+.fl-upd{
+    display: block;
+    cursor: pointer;
+}
+.fl-upd span{
+
+    margin-left: 12px;
+    border-bottom: 0.5px dashed #498FE1;
+}
+
+/* auditory input */
+.auditory-container{
+    margin-top: 30px;
+}
+.auditory-container {
+
+}
+/*.aud-label{
+    vertical-align: top;
+}
+*/
+.aud-label p{
+
+}
+.input-auditory{
+    height: 36px;
+    width: 596px;
+}
+
+/* self-rating */
+.self-rate-container{
+    margin-top: 22px;
+}
+.self-rate-label p{
+ padding-top: 20px;
+}
+.weakness-strength{
+    width: 286px;
+    display: inline-block;
+}
+.strength{
+    margin-left: 16px;
+}
+.weakness-strength p{
+    color: #4a494a;
+    font-family: ProximaNova;
+    font-size: 0.875em;
+    padding-bottom: 4px;
+}
+.self-rate-area{
+    height: 90px;
+    width: 100%;
+}
+
+/* footer */
+.footer{
+    width: auto;
+    background-color: #F4C231;
+}
+.footer-btns{
+    padding-top: 13px;
+    padding-bottom: 14px;
+    width: fit-content;
+    margin-left: 300px;
+}
+.footer-item{
+    display: inline-block;
+}
+.next-step{
+    cursor: pointer;
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+    background: #ffffff;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+    border: none;
+    color: #4a494a;
+    font-family: ProximaNova-Regular;
+    font-size: 1.3125em;
+}
+.next-step:focus{
+    outline: none;
+}
+.reset-btn{
+    color: #ffffff;
+    font-family: ProximaNova-Regular;
+    font-size: 1.3125em;
+    padding-left: 14px;
+}
+.clear-all{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: ProximaNova-Regular;
+    font-size: 1.3125em;
+
+}
+.clear-all:focus{
+    outline: none;
+}
+.bottom-footer{
+    margin-top: 69px;
+    padding-bottom: 11px;
+}
+.footer-text{
+    width: 188px;
+    text-align: left;
+    font-family: ProximaNova;
+    color: #b9b9b9;
+}
+#show-file{
+    padding: 5px;
+    width: fit-content;
+    border: 1px solid #498fe1;
+    display: none;
+}
+.input-label-container{
+    display: flex;
+}
+

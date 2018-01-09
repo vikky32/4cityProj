@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Шаг 2</title>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+	<link rel = "stylesheet" type = "text/css" href = "fonts.css">
+	<link rel = "stylesheet" type = "text/css" href = "step2.css">
+	<link rel = "stylesheet" type = "text/css" href = "normalize.css">
+	<script type="text/javascript" src="library/jquery-3.2.1.min.js" ></script>
+</head>
+<body>
+	<main>
+		<header>
+			<div class = "header-logo">
+				<a href = "#"><img src="images/logo.svg"><span>мозг</span></a>
+			</div>
+			<div class = "header-links">
+				<a href = "catalogue.html"><button>Посмотреть все идеи</button></a>
+				<a href = "step1.html"><button type = "submit">Подать идею</button></a>
+			</div>
+		</header>
+		
+		<section class = "container">
+			<section class = "container-info">
+				
+				<section class = "container-info-header">
+					<div><a href = "step1.html"><img src = "images/path2.svg"></a><p>Планирование процесса</p></div>
+					<p>Шаг 2 из 3</p>
+				</section>
+				<form class = "container-info-form" action="action_page.php" enctype="multipart/form-data">
+					
+					<div class="input-container">
+						<label  class="label-for-input" for = "input-myfunction" onclick="">Моя функция</label>
+						<section class = "section_input-myfunction">
+							<input type = "text" class="input-field" name = "input-myfunction" id = "input-myfunction" value = "" required>
+						</section>
+					</div>
+
+
+					<!--<label for = "first-input-r" onclick="">Этапы реализации</label>-->
+					<!--<section class = "section_input-realisationsteps">-->
+						<!--<div><input type = "text" name = "input-realisationsteps" id="first-input-r" class= "input-realisationsteps" placeholder = "№1"><a href = "#"><img id = "garbage" src = "images/garbage.svg"></a></div>-->
+						<!--<input  type = "text" class="input-field input-realisationsteps" name = "input-realisationsteps"  placeholder = "№2" required>-->
+						<!--<div><button id="addStepBtn"><img src = "images/plus-active.svg" height = "20px" width = "20px"><span>Добавьте  ещё шаг</span></button></div>-->
+
+					<div class="input-container">
+						<div id="DynamicExtraFieldsContainer">
+							<div class="DynamicExtraField">
+								<br>
+								<label for="fist" class="label-for-input">Этапы реализации</label>
+								<br>
+								<input class="fields input-field" id="fist" type="text" name="DynamicExtraField[]">
+								<img class="delete-field" src="images/garbage.svg" alt="">
+							</div>
+						</div>
+
+						<div id="addDynamicField">
+							<img src="images/plus-active.svg" width="20px" height="20px">
+							<input type="button" id="addDynamicExtraFieldButton" value="Добавить этап">
+						</div>
+					</div>
+					<!--</section>-->
+					<div class="input-container">
+					<label class="label-for-input" id="finance-label" for = "input-finance" onclick="">Финансирование</label>
+					<section id="section-finance" class = "section_input-finance">
+						<input type = "text" class="input-field" name = "input-finance" id = "input-finance" onKeyPress="testNum()"><span>гривен</span>
+						<p>Если не нужно, оставьте поле пустым</p>
+					</section>
+					</div>
+
+					<div class="input-container">
+						<label class="label-for-input" for = "input-helpers-company" onclick="" style = "line-height: 70px">Помощники в реализации</label>
+						<section class = "section_input-helpers">
+							<span id = "span-comp">Имя или название компании</span>
+							<span id = "span-fb">Ссылка на Facebook или сайт</span>
+							<input type = "text" class="input-field" name = "input-helpers-company" id = "input-helpers-company" value = "" >
+							<input type = "url" class="input-field" name = "input-helpers-profile" id = "input-helpers-profile" value = "" >
+							<div><a href = "#"><img src = "images/plus.svg" height = "20px" width = "20px"><span>Добавьте  исполнителя</span></a></div>
+						</section>
+					</div>
+					<div class="input-container">
+						<label class="label-for-input" for = "input-days" onclick="">Время на реализацию</label>
+						<section class = "section_input-days">
+							<input type = "text" class="input-field" name = "input-days" id = "input-days"  onKeyPress="testNum()" required><span>дней</span>
+						</section>
+					</div>
+				
+				</form>
+				
+			</section>
+			
+				<section class = "container-footer">
+					<div class = "container-footer-buttons">
+						<a href = "step3.html"><button id="next-step3" type = "submit">Следующий шаг</button></a>
+						<input type = "reset" name = "input-reset" id = "input-reset" value = "или очистить всё">
+					</div>
+				</section>
+			
+		</section>
+		
+		<footer>
+			<div class = "footer-contacts">
+				<p>@2016-2017 - Ресторан</p>
+				<span>4City.</span>
+			</div>
+		</footer>
+		
+	</main>
+	<script src="main.js"></script>
+	<script src="step2.js"></script>
+</body>
+</html>
