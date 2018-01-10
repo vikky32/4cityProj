@@ -36,6 +36,7 @@
 						</div>
 						<div class="form-container">
 							<form class="step-form" action="/action_page.php"  enctype="multipart/form-data" method="post">
+								<div class="inputs-bubble">
 								<div class="input-container">
 									<label for="name-surname" class="label-item name-label name-surname-input" onclick="">Имя и фамилия</label>
 									<input type="text" id="name-surname" class="input-field input-item input-full-width same-height name-surname-input name-input"  name="name-surname" required>
@@ -54,22 +55,24 @@
 									<label for="facebook-profile" class="label-item input-label" onclick="">Профиль Facebook</label>
 									<input type="text" id="facebook-profile" class="input-field input-item same-height half-width input-label"  name="facebook-profile" required>
 								</div>
+								</div>
+								<div class="footer">
+									<div class="footer-btns">
+										<div class="footer-item"><a href="catalogue.html"><button class="next-step">Подать идею</button></a></div>
+
+										<div class=" footer-item reset-btn">
+											<span>или</span>
+											<input class="clear-all" id = "input-reset" type="reset" name="clear-all" value="очистить всё">
+										</div>
+									</div>
+
+								</div>
 
 								</form>
 								
 					    </div>
 					</div>
-					<div class="footer">
-							<div class="footer-btns">
-								<div class="footer-item"><a href="catalogue.html"><button class="next-step">Подать идею</button></a></div>
 
-								<div class=" footer-item reset-btn">
-									<span>или</span>
-									<input class="clear-all" id = "input-reset" type="reset" name="clear-all" value="очистить всё">
-								</div>
-							</div>
-
-					</div>
 				</div>
 				<div class="bottom-footer">
 					<p class="footer-text">© 2016-2017 – Ресторан 4city.

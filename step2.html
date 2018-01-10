@@ -29,7 +29,7 @@
 					<p>Шаг 2 из 3</p>
 				</section>
 				<form class = "container-info-form" action="action_page.php" enctype="multipart/form-data">
-					
+					<div class="inputs-bubble">
 					<div class="input-container">
 						<label  class="label-for-input" for = "input-myfunction" onclick="">Моя функция</label>
 						<section class = "section_input-myfunction">
@@ -85,17 +85,18 @@
 							<input type = "text" class="input-field" name = "input-days" id = "input-days"  onKeyPress="testNum()" required><span>дней</span>
 						</section>
 					</div>
-				
+					</div>
+					<section class = "container-footer">
+						<div class = "container-footer-buttons">
+							<a href = "step3.html"><button id="next-step3" type = "submit">Следующий шаг</button></a>
+							<input type = "reset" name = "input-reset" id = "input-reset" value = "или очистить всё">
+						</div>
+					</section>
 				</form>
 				
 			</section>
 			
-				<section class = "container-footer">
-					<div class = "container-footer-buttons">
-						<a href = "step3.html"><button id="next-step3" type = "submit">Следующий шаг</button></a>
-						<input type = "reset" name = "input-reset" id = "input-reset" value = "или очистить всё">
-					</div>
-				</section>
+
 			
 		</section>
 		

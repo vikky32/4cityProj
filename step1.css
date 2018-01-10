@@ -53,7 +53,9 @@ textarea{
 }
 
 /*main container*/
-
+.info-head{
+    padding: 46px 53px 0 30px;
+}
 .container{
     width: 960px;
     margin: 0 auto;
@@ -80,13 +82,14 @@ textarea{
     background-color: white;
 }
 .main-info{
-    padding: 46px 60px 111px 69px;
     color: #4a494a;
     font-family: ProximaNova-Regular;
     font-size: 1em;
     text-align: left;
 }
-
+.inputs-bubble{
+    padding: 0 60px 111px 69px;
+}
 /* form */
 
 .step-form{
@@ -268,6 +271,9 @@ textarea{
 }
 .clear-all{
     background-color: transparent;
+    /*background-color: yellow;*/
+    /*width: 200px;*/
+    /*height: 200px;*/
     border: none;
     cursor: pointer;
     color: #ffffff;
@@ -298,3 +304,6 @@ textarea{
     display: flex;
 }
 
+.displayClass{
+    display: none;
+}

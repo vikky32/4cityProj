@@ -75,12 +75,18 @@ textarea{
 	width: 100%;
 	background-color: white;
 }
+.info-head{
+    padding: 46px 53px 0 30px;
+}
 .main-info{
-	padding: 46px 60px 111px 69px;
 	color: #4a494a;
     font-family: ProximaNova-Regular;
     font-size: 1em;
     text-align: left;
+}
+.inputs-bubble{
+
+    padding: 46px 60px 111px 69px;
 }
 
 .step-form{
