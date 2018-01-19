@@ -337,4 +337,19 @@ body {
 .inputs-bubble{
   padding: 0 60px 111px 69px;
 }
+#addPerformerField{
+  display: flex;
+}
+#addPerformerFieldBtn{
+  height: 20px;
+  cursor: pointer;
+   font-size: 1em;
+  border: none;
+  color:#D8DADD;
+  line-height: 1;
+  background-color: transparent;
+  outline: none;
+  margin-left: 5px;
+  font-family: ProximaNova-Regular;
+}
 /*# sourceMappingURL=step2.css.map */

@@ -37,13 +37,6 @@
 						</section>
 					</div>
 
-
-					<!--<label for = "first-input-r" onclick="">Этапы реализации</label>-->
-					<!--<section class = "section_input-realisationsteps">-->
-						<!--<div><input type = "text" name = "input-realisationsteps" id="first-input-r" class= "input-realisationsteps" placeholder = "№1"><a href = "#"><img id = "garbage" src = "images/garbage.svg"></a></div>-->
-						<!--<input  type = "text" class="input-field input-realisationsteps" name = "input-realisationsteps"  placeholder = "№2" required>-->
-						<!--<div><button id="addStepBtn"><img src = "images/plus-active.svg" height = "20px" width = "20px"><span>Добавьте  ещё шаг</span></button></div>-->
-
 					<div class="input-container">
 						<div id="DynamicExtraFieldsContainer">
 							<div class="DynamicExtraField">
@@ -60,7 +53,7 @@
 							<input type="button" id="addDynamicExtraFieldButton" value="Добавить этап">
 						</div>
 					</div>
-					<!--</section>-->
+
 					<div class="input-container">
 					<label class="label-for-input" id="finance-label" for = "input-finance" onclick="">Финансирование</label>
 					<section id="section-finance" class = "section_input-finance">
@@ -76,8 +69,12 @@
 							<span id = "span-fb">Ссылка на Facebook или сайт</span>
 							<input type = "text" class="input-field" name = "input-helpers-company" id = "input-helpers-company" value = "" >
 							<input type = "url" class="input-field" name = "input-helpers-profile" id = "input-helpers-profile" value = "" >
-							<div><a href = "#"><img src = "images/plus.svg" height = "20px" width = "20px"><span>Добавьте  исполнителя</span></a></div>
+							<div id="addPerformerField">
+								<img src="images/plus.svg" width="20px" height="20px">
+								<input type="button" id="addPerformerFieldBtn" value="Добавьте исполнителя">
+							</div>
 						</section>
+
 					</div>
 					<div class="input-container">
 						<label class="label-for-input" for = "input-days" onclick="">Время на реализацию</label>
