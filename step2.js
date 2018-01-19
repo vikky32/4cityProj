@@ -1,18 +1,8 @@
-
-
 //запрет на ввод буквенных символов
-
 function testNum(){
     if (event.keyCode < 48 || event.keyCode > 57)
         event.returnValue= false;
 }
-
-
-
-// function testSymb(test) {
-//     finInput.value = finInput.value.replace(/[^0-9+]/, '');
-// }
-//Добавление и удаление динамических полей
 
 $('#addDynamicExtraFieldButton').click(function(event) {
     addDynamicExtraField();
